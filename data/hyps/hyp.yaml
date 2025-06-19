@@ -1,0 +1,34 @@
+lr0: 0.01         # 初始学习率 (SGD=0.01, Adam=0.001)
+lrf: 0.01         # 最终学习率 (lr0 * lrf)
+augment: True     # 数据增强开关
+mosaic: 0.75      # mosaic 增强概率
+hsv_h: 0.015      # 色调扰动
+hsv_s: 0.7        # 饱和度扰动
+hsv_v: 0.4        # 明度扰动
+translate: 0.1    # 平移比例 (+/- fraction)
+scale: 0.5         # 缩放比例 (+/- gain)
+fliplr: 0.5       # 左右翻转概率
+flipud: 0.0       # 上下翻转概率
+shear: 0.0        # shear 变换角度
+perspective: 0.0   # 透视变换比例
+mixup: 0.0        # mixup 增强概率
+copy_paste: 0.0   # copy-paste 概率
+
+# ⚠️ 必须字段（即使设为 0）
+degrees: 0.0      # 图像旋转角度 (+/- deg) ←【必须添加】
+workers: 2        # Dataloader workers 数量
+exist_ok: True    # 是否允许覆盖现有项目
+seed: 42          # 固定随机种子
+weight_decay: 0.0005  # 权重衰减
+momentum: 0.937      # SGD 动量
+box: 0.05            # box loss 增益
+cls: 0.5             # cls loss 增益
+obj: 1.0             # obj loss 增益
+iou_t: 0.20          # IoU 阈值 for objectness
+anchor_t: 4.0        # anchor-multiple threshold
+cls_pw: 1.0          # 分类 BCELoss 正样本权重
+obj_pw: 1.0          # obj BCELoss 正样本权重
+warmup_epochs: 3.0   # warmup 轮数
+warmup_momentum: 0.8 # warmup 初始 momentum
+warmup_bias_lr: 0.1   # warmup 初始 bias lr
+fl_gamma: 0.0        # focal loss gamma

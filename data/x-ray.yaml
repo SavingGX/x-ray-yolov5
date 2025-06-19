@@ -1,0 +1,9 @@
+train: D:/yolov5/VOCData/dataSet_path/train.txt
+val: D:/yolov5/VOCData/dataSet_path/val.txt
+test: D:/yolov5/VOCData/dataSet_path/test.txt
+
+
+nc: 8
+
+names: ['Mobile_Phone','Laptop','Portable_Charger_2','Portable_Charger_1',
+           'Tablet','Cosmetic','Water','Nonmetallic_Lighter']
